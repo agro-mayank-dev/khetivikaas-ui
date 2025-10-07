@@ -186,7 +186,7 @@ function DownloadAppButton({
   text2: string;
 }) {
   return (
-    <button className="bg-white w-full py-2.5 sm:py-4 px-3 sm:px-6 lg:p-2 flex items-center gap-3 rounded-2xl border border-[#D9D9D9] hover:shadow-md transition-all">
+    <button className="bg-white w-full sm:w-auto py-2.5 sm:py-4 px-3 sm:px-6 lg:p-2 flex items-center gap-3 rounded-2xl border border-[#D9D9D9] hover:shadow-md transition-all">
       <img
         src={icon}
         className="size-7 sm:size-11 lg:size-8 xl:size-11"
