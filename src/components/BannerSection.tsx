@@ -120,7 +120,7 @@ const BannerSection = () => {
           <p className="text-[#022B27] font-medium text-lg sm:text-3xl">
             Download KhetiVikaas
           </p>
-          <div className="flex justify-start gap-4 sm:gap-6">
+          <div className="flex justify-start gap-2 sm:gap-6">
             <DownloadAppButton
               icon="/apple-black-icon.svg"
               text1="Download on the"
@@ -186,14 +186,14 @@ function DownloadAppButton({
   text2: string;
 }) {
   return (
-    <button className="bg-white py-2.5 sm:py-4 px-3 sm:px-6 lg:p-2 flex items-center gap-3 rounded-2xl border border-[#D9D9D9] hover:shadow-md transition-all">
+    <button className="bg-white w-full py-2.5 sm:py-4 px-3 sm:px-6 lg:p-2 flex items-center gap-3 rounded-2xl border border-[#D9D9D9] hover:shadow-md transition-all">
       <img
         src={icon}
-        className="w-9 h-9 sm:size-11 lg:size-8 xl:size-11"
+        className="size-7 sm:size-11 lg:size-8 xl:size-11"
         loading="lazy"
       />
       <div className="flex flex-col text-[#011614] font-medium text-left leading-tight">
-        <p className="text-sm sm:text-base">{text1}</p>
+        <p className="text-xs sm:text-base">{text1}</p>
         <p className="text-lg sm:text-2xl">{text2}</p>
       </div>
     </button>
