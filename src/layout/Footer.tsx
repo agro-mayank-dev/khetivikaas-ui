@@ -4,12 +4,11 @@ import headerLogo from "../assets/header-logo.svg";
 const Footer = () => {
   return (
     <div className="w-full px-2 sm:px-6">
-      <div className="bg-[#011614] rounded-3xl sm:py-5 px-0 lg:px-5 overflow-hidden">
+      <div className="bg-[#011614] rounded-3xl sm:py-5 p-3 lg:px-5 overflow-hidden">
         {/* Top Section */}
         <div
-          className="py-20 sm:py-24 bg-no-repeat bg-center bg-cover rounded-3xl flex flex-col gap-8"
+          className="py-20 sm:py-24 bg-no-repeat bg-center bg-cover rounded-3xl flex flex-col gap-8 bg-[url('/footer-bg-img-sm.jpg')] sm:bg-[url('/footer-bg-img.png')]"
           style={{
-            backgroundImage: "url('/footer-bg-img.png')",
             backgroundPosition: "center top",
             backgroundSize: "cover",
           }}

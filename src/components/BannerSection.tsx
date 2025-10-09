@@ -90,18 +90,12 @@
 //   );
 // }
 
-
 import React from "react";
 import { motion } from "framer-motion";
 
 const BannerSection = () => {
   return (
-    <div
-      className="mt-16 sm:mt-24 px-4 sm:px-10 lg:px-14 flex flex-col md:flex-row items-center justify-between gap-0 sm:gap-10 bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('/banner-bg-img.png')",
-      }}
-    >
+    <div className="mt-16 sm:mt-24 px-4 sm:px-10 lg:px-14 flex flex-col md:flex-row items-center justify-between gap-0 sm:gap-10 bg-[url('/banner-bg-img-sm.jpg')] sm:bg-[url('/banner-bg-img.png')] bg-cover bg-center bg-no-repeat">
       {/* Left Section */}
       <div className="py-10 sm:py-16 flex flex-col gap-8 md:text-left max-w-2xl">
         <div className="flex flex-col gap-6">
@@ -199,7 +193,6 @@ function DownloadAppButton({
     </button>
   );
 }
-
 
 // import { motion } from "framer-motion";
 
