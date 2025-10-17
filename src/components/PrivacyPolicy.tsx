@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
   const lastUpdated = "21 September 2025";
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-indigo-50 via-white to-gray-50 text-gray-900 p-6 sm:p-12">
+    <div className="min-h-screen bg-gradient-to-b from-indigo-50 via-white to-gray-50 text-gray-900 p-6 sm:p-12 sm:pb-0">
       <div className="max-w-5xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden border border-gray-100">
         {/* Header */}
         <header className="px-8 py-10 bg-[#4CAF50] text-white">
@@ -281,29 +281,37 @@ export default function PrivacyPolicy() {
                 </>
               ),
             },
-            {
-              id: "changes",
-              title: "12. Changes to this Privacy Policy",
-              content: (
-                <p>
-                  We reserve the unilateral right to amend or revise this Policy
-                  at any time. Updates will be effective immediately upon
-                  posting to the Website or App. Continued use of the Services
-                  constitutes acceptance of the updated Policy.
-                </p>
-              ),
-            },
+            // {
+            //   id: "changes",
+            //   title: "12. Changes to this Privacy Policy",
+            //   content: (
+            //     <p>
+            //       We reserve the unilateral right to amend or revise this Policy
+            //       at any time. Updates will be effective immediately upon
+            //       posting to the Website or App. Continued use of the Services
+            //       constitutes acceptance of the updated Policy.
+            //     </p>
+            //   ),
+            // },
           ].map(({ id, title, content }) => (
             <section id={id} key={id} className="mb-10">
-              <h2 className="text-xl font-bold mb-3">
-                {title}
-              </h2>
+              <h2 className="text-xl font-bold mb-3">{title}</h2>
               <div className="text-gray-700 leading-relaxed">{content}</div>
             </section>
           ))}
-
+          <section>
+            <h2 className="text-xl font-bold mb-3">
+              12. Changes to this Privacy Policy
+            </h2>
+            <div className="text-gray-700 leading-relaxed">
+              We reserve the unilateral right to amend or revise this Policy at
+              any time. Updates will be effective immediately upon posting to
+              the Website or App. Continued use of the Services constitutes
+              acceptance of the updated Policy.
+            </div>
+          </section>
           {/* Footer */}
-          <footer id="contact" className="mt-12 pt-8 border-t border-gray-200">
+          {/* <footer id="contact" className="mt-12 pt-8 border-t border-gray-200">
             <div className="flex items-center gap-3 mb-2">
               <Mail className="w-5 h-5" />
               <h3 className="text-base font-semibold">
@@ -324,7 +332,7 @@ export default function PrivacyPolicy() {
                 privacy@khetivikaas.com
               </a>
             </p>
-          </footer>
+          </footer> */}
         </main>
       </div>
     </div>

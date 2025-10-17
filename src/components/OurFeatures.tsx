@@ -30,6 +30,11 @@ const cardData2 = [
     title: "Community Support",
     text: "Join a thriving network of farmers and agronomists to exchange advice, tips, and real-world solutions",
   },
+  {
+    icon: "/record-management-icon.svg",
+    title: "Crop Record Management",
+    text: "Track every crop, cost, and yield in one smart digital ledger.",
+  },
 ];
 
 const OurFeatures = () => {
@@ -45,11 +50,17 @@ const OurFeatures = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6">
           {cardData2.map((item) => (
             <Card key={item.title} {...item} />
           ))}
         </div>
+
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {cardData2.map((item) => (
+            <Card key={item.title} {...item} />
+          ))}
+        </div> */}
       </div>
     </div>
   );

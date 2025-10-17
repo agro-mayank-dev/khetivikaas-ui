@@ -65,10 +65,10 @@ const Navbar = () => {
       </div>
 
       {/* Download Button */}
-      <button className="hidden md:block p-4 rounded-[86px] bg-[#4CAF50] text-white text-base font-medium">
+      {/* <button className="hidden md:block p-4 rounded-[86px] bg-[#4CAF50] text-white text-base font-medium">
         Download App
-      </button>
-
+      </button> */}
+      <div></div>
       {/* Mobile Menu */}
       <div className="relative md:hidden" ref={menuRef}>
         <button

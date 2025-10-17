@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
 
         {/* Divider Section */}
-        <div className="sm:py-8 mx-6 flex flex-col sm:flex-row justify-between items-center border-b border-[#5A5C5A]">
+        <div className="py-8 mx-6 flex flex-col sm:flex-row justify-between items-center border-b border-[#5A5C5A]">
           <img
             src={headerLogo}
             alt="Logo"

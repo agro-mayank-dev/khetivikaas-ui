@@ -22,7 +22,7 @@ export default function TermsOfUse() {
   const lastUpdated = "21 September 2025";
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-indigo-50 text-gray-900 p-6 sm:p-12">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-indigo-50 text-gray-900 p-6 sm:p-12 sm:pb-0">
       <div className="max-w-5xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-100">
         <header className="px-8 py-10 bg-[#4CAF50] text-white">
           <div className="flex items-start justify-between">
@@ -424,21 +424,21 @@ export default function TermsOfUse() {
                 </p>
               ),
             },
-            {
-              id: "contact",
-              title: "15. Contact Information",
-              content: (
-                <p>
-                  For inquiries email:{" "}
-                  <a
-                    href="mailto:contact@khetivikaas.com"
-                    className="hover:underline"
-                  >
-                    contact@khetivikaas.com
-                  </a>
-                </p>
-              ),
-            },
+            // {
+            //   id: "contact",
+            //   title: "15. Contact Information",
+            //   content: (
+            //     <p>
+            //       For inquiries email:{" "}
+            //       <a
+            //         href="mailto:contact@khetivikaas.com"
+            //         className="hover:underline"
+            //       >
+            //         contact@khetivikaas.com
+            //       </a>
+            //     </p>
+            //   ),
+            // },
           ].map(({ id, title, content }) => (
             <section id={id} key={id} className="mb-10">
               <h2 className="text-xl font-bold mb-3">{title}</h2>
@@ -446,7 +446,21 @@ export default function TermsOfUse() {
             </section>
           ))}
 
-          <footer className="mt-12 pt-8 border-t border-gray-200">
+          <section>
+            <h2 className="text-xl font-bold mb-3">15. Contact Information</h2>
+            <div className="text-gray-700 leading-relaxed">
+              <p>
+                For inquiries email:{" "}
+                <a
+                  href="mailto:contact@khetivikaas.com"
+                  className="hover:underline"
+                >
+                  contact@khetivikaas.com
+                </a>
+              </p>
+            </div>
+          </section>
+          {/* <footer className="mt-12 pt-8 border-t border-gray-200">
             <div className="flex items-center gap-3 mb-2">
               <Mail className="w-5 h-5" />
               <h3 className="text-base font-semibold">
@@ -466,7 +480,7 @@ export default function TermsOfUse() {
                 contact@khetivikaas.com
               </a>
             </p>
-          </footer>
+          </footer> */}
         </main>
       </div>
     </div>
@@ -476,9 +490,7 @@ export default function TermsOfUse() {
 function TermsTOC() {
   return (
     <aside className="mb-8 p-6 bg-gradient-to-r from-white to-green-50 rounded-xl border border-green-100 shadow-sm">
-      <h2 className="text-lg font-semibold mb-3">
-        📚 Table of Contents
-      </h2>
+      <h2 className="text-lg font-semibold mb-3">📚 Table of Contents</h2>
       <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
         {termsTOC.map((item) => (
           <li key={item.id}>
