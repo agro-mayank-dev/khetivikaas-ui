@@ -30,11 +30,13 @@ const Footer = () => {
               icon="/apple-white-icon.svg"
               text1="Download on the"
               text2="App Store"
+              link="https://apps.apple.com/us/app/khetivikaas-ai/id6754886531"
             />
             <DownloadAppButton
               icon="/play-store-icon.svg"
               text1="Get It on"
               text2="Google Play"
+              link="https://play.google.com/store/apps/details?id=com.app.khetivikaas"
             />
           </div>
         </div>
@@ -76,18 +78,24 @@ function DownloadAppButton({
   icon,
   text1,
   text2,
+  link,
 }: {
   icon: string;
   text1: string;
   text2: string;
+  link: string;
 }) {
   return (
-    <button className="py-2 sm:py-3 px-4 sm:px-6 rounded-2xl border border-[#354342] flex items-center gap-2 bg-[#0E1E1C]/40 backdrop-blur-sm hover:scale-105 transition-transform duration-200">
+    <Link
+      to={link}
+      target="_blank"
+      className="py-2 sm:py-3 px-4 sm:px-6 rounded-2xl border border-[#354342] flex items-center gap-2 bg-[#0E1E1C]/40 backdrop-blur-sm hover:scale-105 transition-transform duration-200"
+    >
       <img src={icon} className="size-6 sm:size-9" loading="lazy" />
       <div className="flex flex-col gap-0.5 sm:gap-1">
         <p className="text-xs font-medium text-white">{text1}</p>
         <p className="text-sm sm:text-lg font-medium text-white">{text2}</p>
       </div>
-    </button>
+    </Link>
   );
 }

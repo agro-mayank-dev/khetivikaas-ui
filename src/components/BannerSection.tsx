@@ -92,6 +92,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const BannerSection = () => {
   return (
@@ -119,11 +120,13 @@ const BannerSection = () => {
               icon="/apple-black-icon.svg"
               text1="Download on the"
               text2="App Store"
+              link="https://apps.apple.com/us/app/khetivikaas-ai/id6754886531"
             />
             <DownloadAppButton
               icon="/play-store-icon.svg"
               text1="Get It on"
               text2="Google Play"
+              link="https://play.google.com/store/apps/details?id=com.app.khetivikaas"
             />
           </div>
         </div>
@@ -174,13 +177,15 @@ function DownloadAppButton({
   icon,
   text1,
   text2,
+  link
 }: {
   icon: string;
   text1: string;
   text2: string;
+  link: string
 }) {
   return (
-    <button className="bg-white w-full sm:w-auto py-2.5 sm:py-4 px-3 sm:px-6 lg:p-2 flex items-center gap-3 rounded-2xl border border-[#D9D9D9] hover:shadow-md transition-all">
+    <Link to={link} target="_blank" className="bg-white w-full sm:w-auto py-2.5 sm:py-4 px-3 sm:px-6 lg:p-2 flex items-center gap-3 rounded-2xl border border-[#D9D9D9] hover:shadow-md transition-all" >
       <img
         src={icon}
         className="size-7 sm:size-11 lg:size-8 xl:size-11"
@@ -190,7 +195,7 @@ function DownloadAppButton({
         <p className="text-xs sm:text-base">{text1}</p>
         <p className="text-lg sm:text-2xl">{text2}</p>
       </div>
-    </button>
+    </Link>
   );
 }
 
