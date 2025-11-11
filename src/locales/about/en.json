@@ -1,0 +1,20 @@
+{
+  "title": "About Us – Kheti Vikaas",
+  "tagline": "Farm Smarter, Grow Together.",
+  "intro1": "At {{appName}}, we believe that farmers deserve simple, reliable, and smart solutions to grow more with confidence. Agriculture is the backbone of our communities, and our mission is to empower farmers with the right knowledge, tools, and technology — right at their fingertips.",
+  "intro2": "We are not just an app; we are a digital companion for farmers, designed to make farming smarter, easier, and more profitable.",
+  "visionTitle": "Our Vision",
+  "visionText": "To bridge the gap between traditional wisdom and modern technology, ensuring every farmer — big or small — has access to information, opportunities, and innovations that can transform their fields and their future.",
+  "offerTitle": "What We Offer",
+  "offerList": {
+    "cropAdvisory": "🌾 Crop Advisory – Guidance for each crop, fruit, or vegetable to increase yield and prevent losses.",
+    "mandiRates": "💰 Mandi Rates – Stay updated with the latest crop and vegetable prices for better selling decisions.",
+    "weatherUpdates": "☀️ Weather Updates – Receive timely weather alerts to plan irrigation, harvesting, and other critical tasks.",
+    "marketplace": "🛒 Marketplace – List, buy, or explore seeds, fertilizers, tools, and produce directly on the platform. No transaction fees — just a safe listing space for farmers.",
+    "aiDiagnosis": "🤖 AI-powered Diagnosis – Upload crop images to instantly detect diseases, pests, and nutrient deficiencies with actionable solutions.",
+    "communitySupport": "👨‍🌾 Community Support – A trusted hub where farmers share experiences, ask questions, and learn from one another.",
+    "safeSpace": "🫱🏽‍🫲🏽 Safe and Supportive Space – Seek advice, solve challenges, and exchange practical solutions.",
+    "peerEcosystem": "🌿 Peer-driven Ecosystem – Built for continuous learning, collaboration, and mutual growth."
+  },
+  "footer": "Kheti Vikaas – Empowering Farmers, Enriching Futures."
+}

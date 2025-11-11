@@ -1,4 +1,4 @@
-import Navbar from "../layout/Navbar";
+import { Navbar } from "../layout/Navbar";
 import SmartGrow from "../components/SmartGrow";
 import OurFeatures from "../components/OurFeatures";
 import MakingDifference from "../components/MakingDifference";
@@ -7,22 +7,6 @@ import Description from "../components/Description";
 import Footer from "../layout/Footer";
 import BannerSection from "../components/BannerSection";
 import OurVision from "../components/OurVision";
-
-// export default function Home() {
-//   return (
-//     <>
-//       <Navbar />
-//       <BannerSection />
-//       <SmartGrow />
-//       <OurVision/>
-//       <OurFeatures />
-//       <MakingDifference />
-//       <MarketPlace />
-//       <Description />
-//       <Footer />
-//     </>
-//   );
-// }
 
 export default function Home() {
   return (

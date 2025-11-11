@@ -47,6 +47,9 @@ const Footer = () => {
             className="w-20 h-11 sm:w-28 sm:h-14"
           />
           <div className="flex gap-6 text-base text-white font-medium mt-4 sm:mt-0">
+            <Link to="/about-us" className="hover:underline">
+              About Us
+            </Link>
             <Link to="/privacy-policy" className="hover:underline">
               Privacy Policy
             </Link>
