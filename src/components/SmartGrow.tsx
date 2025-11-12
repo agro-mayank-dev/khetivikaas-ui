@@ -1,20 +1,17 @@
+import { useTranslation } from "react-i18next";
+
 const SmartGrow = () => {
+  const { t } = useTranslation("home");
+
   const content = {
-    title: "Farm Smarter, Grow Together",
-    description: [
-      "Empowering farmers with simple digital tools, real-time insights, and a supportive community to boost productivity and profits",
-      "Join a growing network of farmers using smart tools, market insights, and expert guidance to make better decisions and achieve more together",
-      "From weather updates to mandi rates and crop advice, we help you farm smarter while connecting you with a community that grows stronger together.",
-    ],
+    title: t("smartGrow.title"),
+    description: [t("smartGrow.description_1"), t("smartGrow.description_2"), t("smartGrow.description_3")],
     images: [
-      {
-        src: "/smartgrow1.png",
-        alt: "Farmer using digital tools for crop management",
-      },
-      { src: "/smartgrow2.png", alt: "Real-time market insights dashboard" },
-      { src: "/smartgrow3.png", alt: "Community of farmers collaborating" },
-      { src: "/smartgrow4.png", alt: "Weather and crop advisory interface" },
-    ],
+      { src: "/smartgrow1.png", alt: t("smartGrow.image_1_alt") },
+      { src: "/smartgrow2.png", alt: t("smartGrow.image_2_alt") },
+      { src: "/smartgrow3.png", alt: t("smartGrow.image_3_alt") },
+      { src: "/smartgrow4.png", alt: t("smartGrow.image_4_alt") }
+    ]
   };
 
   return (

@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 const MakingDifference = () => {
+  const { t } = useTranslation("home");
+
   return (
     <section className="py-10 sm:py-20 px-5 sm:px-14 flex flex-col gap-8 sm:gap-12">
       <h1 className="font-medium text-3xl sm:text-6xl text-[#022B27] text-center">
-        Making a Difference in Every Field
+        {t("makingDifference.title")}
       </h1>
 
       <div className="flex flex-col sm:flex-row gap-6">
@@ -17,15 +21,10 @@ const MakingDifference = () => {
           <img src="/wheat-img.svg" />
           <div className="font-medium text-sm sm:text-xl bg-[#011614] p-4 rounded-2xl flex flex-col gap-2">
             <p className="text-[#C7CAC7]">
-              KhetiVikaas is a platform built to empower farmers and make
-              trading simple, fair, and rewarding. While fair prices ensure your
-              hard work is valued.
+              {t("makingDifference.description_1")}
             </p>
             <p className="text-[#A2A5A2]">
-              Our “Local First” approach helps you connect with your community,
-              supporting local growth and opportunities. Explore endless
-              possibilities to trade, grow, and succeed with KhetiVikaas—your
-              trusted partner in farming.
+              {t("makingDifference.description_2")}
             </p>
           </div>
         </div>

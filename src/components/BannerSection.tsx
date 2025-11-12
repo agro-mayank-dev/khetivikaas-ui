@@ -90,11 +90,13 @@
 //   );
 // }
 
-import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const BannerSection = () => {
+  const { t } = useTranslation("home");
+
   return (
     <div className="mt-16 sm:mt-24 px-4 sm:px-10 lg:px-14 flex flex-col md:flex-row items-center justify-between gap-0 sm:gap-10 bg-[url('/banner-bg-img-sm.jpg')] sm:bg-[url('/banner-bg-img.png')] bg-cover bg-center bg-no-repeat">
       {/* Left Section */}
@@ -102,30 +104,30 @@ const BannerSection = () => {
         <div className="flex flex-col gap-6">
           <div className="py-2.5 px-5 rounded-3xl bg-[#4CAF501A] sm:mx-auto md:mx-0 w-fit">
             <p className="text-xs sm:text-base font-medium text-[#17771B]">
-              Simple tools. Smarter farming. Greater profits
+              {t("bannerSection.tagline")}
             </p>
           </div>
 
           <h3 className="font-medium text-4xl sm:text-5xl lg:text-6xl text-[#022B27] leading-tight">
-            Your Digital Farming Companion
+            {t("bannerSection.title")}
           </h3>
         </div>
 
         <div className="flex flex-col gap-6">
           <p className="text-[#022B27] font-medium text-lg sm:text-3xl">
-            Download KhetiVikaas
+            {t("bannerSection.downloadText")}
           </p>
           <div className="flex justify-start gap-2 sm:gap-6">
             <DownloadAppButton
               icon="/apple-black-icon.svg"
-              text1="Download on the"
-              text2="App Store"
+              text1={t("bannerSection.appStore.text1")}
+              text2={t("bannerSection.appStore.text2")}
               link="https://apps.apple.com/us/app/khetivikaas-ai/id6754886531"
             />
             <DownloadAppButton
               icon="/play-store-icon.svg"
-              text1="Get It on"
-              text2="Google Play"
+              text1={t("bannerSection.googlePlay.text1")}
+              text2={t("bannerSection.googlePlay.text2")}
               link="https://play.google.com/store/apps/details?id=com.app.khetivikaas"
             />
           </div>
@@ -137,7 +139,7 @@ const BannerSection = () => {
         {/* Main mobile image */}
         <motion.img
           src="/banner-mobile-img.png"
-          alt=""
+          alt={t("bannerSection.alt.mainImage")}
           className="w-11/12 sm:w-[60%] md:w-[85%] lg:w-auto lg:h-screen xl:h-auto xl:w-[80%] relative"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -148,7 +150,7 @@ const BannerSection = () => {
         {/* Overlay Image 1 */}
         <motion.img
           src="/banner-crop-advisory-img.jpg"
-          alt=""
+          alt={t("bannerSection.alt.overlay1")}
           className="absolute rounded-2xl w-[55%] sm:w-[40%] md:w-[45%] lg:w-60 xl:w-2/4 h-32 lg:h-40 xl:h-40 bottom-2 sm:-bottom-2 md:-bottom-4 lg:bottom-16 xl:bottom-16 right-[45%] md:right-[15%] lg:right-[40%] xl:right-[40%] shadow-md"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
@@ -159,7 +161,7 @@ const BannerSection = () => {
         {/* Overlay Image 2 */}
         <motion.img
           src="/banner-mandi-rates-img.png"
-          alt=""
+          alt={t("bannerSection.alt.overlay2")}
           className="absolute w-4/6 sm:w-[35%] md:w-[40%] lg:w-3/5 lg:h-24 xl:h-32 xl:w-72 top-[38%] sm:top-[45%] md:top-[48%] lg:top-[38%] xl:top-[38%] -right-4 sm:right-[8%] md:right-[12%] lg:right-0 xl:right-14"
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
@@ -177,15 +179,19 @@ function DownloadAppButton({
   icon,
   text1,
   text2,
-  link
+  link,
 }: {
   icon: string;
   text1: string;
   text2: string;
-  link: string
+  link: string;
 }) {
   return (
-    <Link to={link} target="_blank" className="bg-white w-full sm:w-auto py-2.5 sm:py-4 px-3 sm:px-6 lg:p-2 flex items-center gap-3 rounded-2xl border border-[#D9D9D9] hover:shadow-md transition-all" >
+    <Link
+      to={link}
+      target="_blank"
+      className="bg-white w-full sm:w-auto py-2.5 sm:py-4 px-3 sm:px-6 lg:p-2 flex items-center gap-3 rounded-2xl border border-[#D9D9D9] hover:shadow-md transition-all"
+    >
       <img
         src={icon}
         className="size-7 sm:size-11 lg:size-8 xl:size-11"

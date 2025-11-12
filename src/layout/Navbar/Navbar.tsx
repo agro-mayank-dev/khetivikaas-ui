@@ -7,9 +7,9 @@ import { LanguageDropdown } from "./LanguageDropdown";
 import { MobileMenu } from "./MobileMenu";
 
 const MENU_ITEMS = [
-  { label: "Home", id: "home" },
-  { label: "Our Vision", id: "vision" },
-  { label: "Features", id: "feature" },
+  { label: "navbar.menu.home", id: "home" },
+  { label: "navbar.menu.vision", id: "vision" },
+  { label: "navbar.menu.features", id: "feature" },
 ];
 
 export const Navbar = () => {
@@ -20,7 +20,7 @@ export const Navbar = () => {
   const menuRef = useRef<HTMLDivElement | null>(null);
   const desktopLangRef = useRef<HTMLDivElement | null>(null);
   const mobileLangRef = useRef<HTMLDivElement | null>(null);
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation('home');
 
   const handleClickOutside = (e: MouseEvent) => {
     const target = e.target as Node;
@@ -77,7 +77,7 @@ export const Navbar = () => {
             onClick={() => handleScroll(item.id)}
             className="text-[#808182] hover:text-black transition-colors duration-200"
           >
-            {item.label}
+            {t(item.label)}
           </button>
         ))}
       </div>

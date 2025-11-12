@@ -1,15 +1,18 @@
+import { useTranslation } from "react-i18next";
+
 interface Props {
   isMenuOpen: boolean;
   onItemClick: (id: string) => void;
 }
 
 const MENU_ITEMS = [
-  { label: "Home", id: "home" },
-  { label: "Our Vision", id: "vision" },
-  { label: "Features", id: "feature" },
+  { label: "navbar.menu.home", id: "home" },
+  { label: "navbar.menu.vision", id: "vision" },
+  { label: "navbar.menu.features", id: "feature" },
 ];
 
 export const MobileMenu = ({ isMenuOpen, onItemClick }: Props) => {
+  const { t } = useTranslation('home');
 
   if (!isMenuOpen) return null;
 
@@ -21,7 +24,7 @@ export const MobileMenu = ({ isMenuOpen, onItemClick }: Props) => {
           onClick={() => onItemClick(item.id)}
           className="block w-full text-left py-2 text-lg text-[#808182] hover:bg-gray-100 rounded"
         >
-          {item.label}
+          {t(item.label)}
         </button>
       ))}
     </div>

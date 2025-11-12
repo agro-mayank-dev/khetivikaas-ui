@@ -1,0 +1,123 @@
+{
+  "navbar": {
+    "menu": {
+      "home": "Home",
+      "vision": "Our Vision",
+      "features": "Features"
+    },
+    "language": "Language",
+    "logoAlt": "Logo"
+  },
+  "bannerSection": {
+    "tagline": "Simple tools. Smarter farming. Greater profits",
+    "title": "Your Digital Farming Companion",
+    "downloadText": "Download KhetiVikaas",
+    "appStore": {
+      "text1": "Download on the",
+      "text2": "App Store"
+    },
+    "googlePlay": {
+      "text1": "Get It on",
+      "text2": "Google Play"
+    },
+    "alt": {
+      "mainImage": "Mobile app showcase",
+      "overlay1": "Crop advisory feature preview",
+      "overlay2": "Mandi rates feature preview"
+    }
+  },
+  "smartGrow": {
+    "title": "Farm Smarter, Grow Together",
+    "description_1": "Empowering farmers with simple digital tools, real-time insights, and a supportive community to boost productivity and profits.",
+    "description_2": "Join a growing network of farmers using smart tools, market insights, and expert guidance to make better decisions and achieve more together.",
+    "description_3": "From weather updates to mandi rates and crop advice, we help you farm smarter while connecting you with a community that grows stronger together.",
+    "image_1_alt": "Farmer using digital tools for crop management",
+    "image_2_alt": "Real-time market insights dashboard",
+    "image_3_alt": "Community of farmers collaborating",
+    "image_4_alt": "Weather and crop advisory interface"
+  },
+  "ourtVision": {
+    "title": "Our Vision",
+    "subtitle_1": "To bridge the gap between traditional wisdom and modern technology, ensuring every farmer—big or small—has access to",
+    "subtitle_2": "information, opportunities, and innovations that can transform",
+    "paragraph_1": "their fields and their future. KhetiVikaas,",
+    "paragraph_2": "“Farm smarter, Grow together”",
+    "image_1_alt": "First illustration representing KhetiVikaas vision",
+    "image_2_alt": "Second illustration representing KhetiVikaas vision"
+  },
+  "ourFeatures": {
+    "title": "Features",
+    "features": [
+      {
+        "title": "Crop Advisory",
+        "text": "We provide guidance on crop health, pest management, and best farming practices tailored to your region."
+      },
+      {
+        "title": "Mandi Rates",
+        "text": "Know the market instantly — helping farmers sell their produce at fair prices and plan ahead effectively."
+      },
+      {
+        "title": "Weather Updates",
+        "text": "Accurate, localized weather information to help you schedule sowing, irrigation, and harvesting efficiently."
+      },
+      {
+        "title": "Marketplace",
+        "text": "Connect with trusted buyers and sellers, compare prices, and access essential farming products all in one place."
+      },
+      {
+        "title": "Community Support",
+        "text": "Join a thriving network of farmers and agronomists to exchange advice, tips, and real-world solutions."
+      },
+      {
+        "title": "Crop Record Management",
+        "text": "Track every crop, cost, and yield in one smart digital ledger."
+      }
+    ]
+  },
+  "makingDifference": {
+    "title": "Making a Difference in Every Field",
+    "description_1": "KhetiVikaas is a platform built to empower farmers and make trading simple, fair, and rewarding. While fair prices ensure your hard work is valued.",
+    "description_2": "With our 'Local First' approach, we help you connect directly with your community, supporting local growth and opportunities. Explore endless ways to trade, grow, and thrive with KhetiVikaas—your trusted partner in farming.",
+    "mainImage_alt": "Farmers trading in the local marketplace",
+    "icon_alt": "Wheat icon representing agriculture"
+  },
+  "marketplace": {
+    "title": "Marketplace – Trade with Trust, Grow with Freedom",
+    "cards": {
+      "zeroCommission": {
+        "title": "Zero Commission for Individuals",
+        "text": "Farmers keep every rupee they earn — no hidden charges or deductions."
+      },
+      "fairPrices": {
+        "title": "Fair Prices",
+        "text": "Compare real-time offers and choose the best deal for your produce with complete transparency."
+      },
+      "localFirst": {
+        "title": "Local First",
+        "text": "Find buyers and sellers from your own region, building stronger and faster local trade connections."
+      },
+      "endlessOpportunities": {
+        "title": "Endless Opportunities",
+        "text": "List your crops freely and connect with trusted buyers and sellers to grow your business with confidence."
+      }
+    }
+  },
+  "description": {
+    "text": "On KhetiVikaas, I’m not alone. I learn from other farmers, get instant guidance, and feel part of a bigger community working together for growth."
+  },
+  "footer": {
+    "title_line1": "Join the",
+    "title_line2": "Movement Today",
+    "subtitle": "KhetiVikaas is free, easy to use, and built for your growth",
+    "about_us": "About Us",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
+    "copyright": "© Copyright 2025. KhetiVikaas",
+    "download": {
+      "apple_text1": "Download on the",
+      "apple_text2": "App Store",
+      "play_text1": "Get it on",
+      "play_text2": "Google Play"
+    }
+  }
+}
